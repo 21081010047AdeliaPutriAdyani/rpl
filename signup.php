@@ -10,7 +10,7 @@
         $password = $_POST['password'];
         $jabatan = $_POST['jabatan'];
 
-        $query = "INSERT INTO employees(id_employees,nama_karyawan,username,password,jabatan) VALUES('$id_employees','$nama_karyawan','$username','$password','$jabatan')");
+        $query = "INSERT INTO employees(id_employees,nama_karyawan,username,password,jabatan) VALUES('$id_employees','$nama_karyawan','$username','$password','$jabatan')";
         
         $result = mysqli_query(connection(),$query);
         if ($result) {
