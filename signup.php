@@ -44,7 +44,7 @@
 
     <?php
 
-    if(isset($_POST['Submit'])) {
+    if(isset($_POST['GET STARTED'])) {
         $username = $_POST['username'];
         $password = $_POST['password'];
 
