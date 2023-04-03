@@ -32,7 +32,7 @@
 
         include("koneksi.php");
 
-        $hasil = mysql_query("INSERT INTO employees(username, password) VALUES('$username','$password')");
+        $query = mysql_query("INSERT INTO employees(username, password) VALUES('$username','$password')");
 
         echo "User added successfully. <a href='admin.php'>View Users</a>";
     }
