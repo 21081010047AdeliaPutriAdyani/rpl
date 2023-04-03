@@ -45,12 +45,15 @@
     <?php
 
     if(isset($_POST['GET STARTED'])) {
+        $id_employees = $_POST['id_employees'];
+        $nama_karyawan = $_POST['nama_karyawan'];
         $username = $_POST['username'];
         $password = $_POST['password'];
+        $jabatan = $_POST['jabatan'];
 
         include("koneksi.php");
 
-        $hasil = mysql_query("INSERT INTO employees(username,password) VALUES('$username','$password')");
+        $hasil = mysql_query("INSERT INTO employees(id_employees,nama_karyawan,username,password,jabatan) VALUES('$id_employees','$nama_karyawan','$username','$password','$jabatan')");
 
         echo "User added successfully. <a href='add.php'>View Users</a>";
     }
