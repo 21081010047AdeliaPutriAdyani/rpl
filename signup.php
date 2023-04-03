@@ -61,6 +61,14 @@
             <tr> 
                 <td><input type="submit" name="GET STARTED" value="GET STARTED"></td> 
             </tr>
+            <?php 
+                          if ($status=='ok') {
+                            echo '<br><br><div class="alert alert-success" role="alert">Data Customer berhasil disimpan</div>';
+                          }
+                          elseif($status=='err'){
+                            echo '<br><br><div class="alert alert-danger" role="alert">Data Customer gagal disimpan</div>';
+                          }
+                        ?>
         </table>
     </form>
 </body>
