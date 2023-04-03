@@ -31,7 +31,7 @@
     <p>
         <img src="login.png" height="100" width="100" style="display:block; margin:auto;"/>
     </p>
-    <form action="signup.php" method="POST">
+    <form action="kasir.html" method="POST">
         <table style="margin-left: auto; margin-right: auto; width=25%; border=0;">
             <tr> 
                 <td>Id Karyawan</td>
