@@ -1,3 +1,26 @@
+<?php 
+    include ('koneksi.php');
+
+    $status = '';
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $id_employees = $_POST['id_employees'];
+        $nama_karyawan = $_POST['nama_karyawan'];
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $jabatan = $_POST['jabatan'];
+
+        $query = "INSERT INTO employees(id_employees,nama_karyawan,username,password,jabatan) VALUES('$id_employees','$nama_karyawan','$username','$password','$jabatan')");
+        
+        $result = mysqli_query(connection(),$query);
+        if ($result) {
+          $status = 'ok';
+        }
+        else{
+          $status = 'err';
+        }
+    }
+?>
 <html>
 <head>
     <title>SIGN UP</title>
@@ -40,23 +63,5 @@
             </tr>
         </table>
     </form>
-
-
-    <?php
-
-    if(isset($_POST['GET STARTED'])) {
-        $id_employees = $_POST['id_employees'];
-        $nama_karyawan = $_POST['nama_karyawan'];
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        $jabatan = $_POST['jabatan'];
-
-        include("koneksi.php");
-
-        $hasil = mysql_query("INSERT INTO employees(id_employees,nama_karyawan,username,password,jabatan) VALUES('$id_employees','$nama_karyawan','$username','$password','$jabatan')");
-
-        echo "User added successfully. <a href='add.php'>View Users</a>";
-    }
-    ?>
 </body>
 </html>
