@@ -18,6 +18,11 @@
 
             <tr><td><input type="submit" name="Submit" value="ENTER"></td> </tr>
 
+            <tr> <td>Belum Punya Akun?</td> </tr>
+            <tr> <td> <a href="signup.php"> SIGN UP </a> </td> </tr>
+        </table>
+    </form>
+
 
     <?php
 
@@ -32,9 +37,5 @@
         echo "User added successfully. <a href='admin.php'>View Users</a>";
     }
     ?>
-    <tr> <td>Belum Punya Akun?</td> </tr>
-            <tr> <td> <a href="signup.php"> SIGN UP </a> </td> </tr>
-        </table>
-    </form>
 </body>
 </html>
