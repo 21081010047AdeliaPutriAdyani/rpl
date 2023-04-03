@@ -11,18 +11,13 @@
     <form action="add.php" method="post" name="form1">
         <table style="margin-left: auto; margin-right: auto; width=25%; border=0;">
             <tr> 
-                <td>First Name</td>
+                <td>Id Karyawan</td>
                 <td><input type="text" name="username"></td> 
             </tr>
             
             <tr> 
-                <td>Last Name</td>
+                <td>Nama Karyawan</td>
                 <td><input type="text" name="password"></td> 
-            </tr>
-
-            <tr> 
-                <td>Email</td>
-                <td><input type="text" name="username"></td> 
             </tr>
             
             <tr> 
@@ -32,6 +27,11 @@
 
             <tr> 
                 <td>Password</td>
+                <td><input type="text" name="username"></td> 
+            </tr>
+
+            <tr> 
+                <td>Jabatan</td>
                 <td><input type="text" name="username"></td> 
             </tr>
 
