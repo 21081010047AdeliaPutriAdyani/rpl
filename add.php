@@ -35,7 +35,7 @@
 
         $hasil = mysql_query("INSERT INTO employees(username,password) VALUES('$username','$password')");
 
-        echo "User added successfully. <a href='add.php'>View Users</a>";
+        echo "User added successfully. <a href='signup.php'>View Users</a>";
     }
     ?>
 </body>
