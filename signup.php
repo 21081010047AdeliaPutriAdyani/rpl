@@ -36,12 +36,8 @@
             </tr>
 
             <tr> 
-                <td>GET STARTED</td> 
-                <td><input type="submit" name="Submit" value="ENTER"></td> 
+                <td><input type="submit" name="GET STARTED" value="GET STARTED"></td> 
             </tr>
-
-            <tr> <td>Belum Punya Akun?</td> </tr>
-            <tr> <td>Sign Up</td> </tr>
         </table>
     </form>
 
