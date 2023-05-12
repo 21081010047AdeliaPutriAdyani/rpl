@@ -5,7 +5,7 @@
 
 <body>
     <h2 style="text-align:center">LOGIN</h2>
-    <h2 style="text-align:center">LOGIn</h2>
+    <h2 style="text-align:center">LOGIN</h2>
     <p>
         <img src="login.png" height="100" width="100" style="display:block; margin:auto;"/>
     </p>
