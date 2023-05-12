@@ -4,13 +4,13 @@
     $status = '';
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $id_karyawan = $_POST['id_karyawan'];
+        $id_employees = $_POST['id_employees'];
         $nama_karyawan = $_POST['nama_karyawan'];
         $username = $_POST['username'];
         $password = $_POST['password'];
         $jabatan = $_POST['jabatan'];
 
-        $query = "INSERT INTO employees (id_employees,nama_karyawan,username,password,jabatan) VALUES('$id_karyawan','$nama_karyawan','$username','$password','$jabatan')";
+        $query = "INSERT INTO employees (id_employees,nama_karyawan,username,password,jabatan) VALUES('$id_employee','$nama_karyawan','$username','$password','$jabatan')";
         
         $result = mysqli_query(connection(),$query);
         if ($result) {
@@ -34,7 +34,7 @@
     <form action="kasir.html" method="POST">
         <table style="margin-left: auto; margin-right: auto; width=25%; border=0;">
             <tr> 
-                <td>Id Karyawan</td>
+                <td>Id Emoloyee</td>
                 <td><input type="text" name="id_karyawan" required="required"></td> 
             </tr>
             
