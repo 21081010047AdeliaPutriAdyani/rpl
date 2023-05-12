@@ -5,12 +5,13 @@
 
 <body>
     <h2 style="text-align:center">LOGINnnnn</h2>
+    <h2 style="text-align:center">LOGIn</h2>
     <p>
         <img src="login.png" height="100" width="100" style="display:block; margin:auto;"/>
     </p>
     <form action="kasir.html" method="post" name="form1">
         <table style="margin:auto; width=25%; border=0;">
-            <tr> <td>USERNAMEe</td> </tr>
+            <tr> <td>USERNAME</td> </tr>
             <tr> <td><input type="text" name="username"></td> </tr>
             
             <tr> <td>PASSWORD</td> </tr>
